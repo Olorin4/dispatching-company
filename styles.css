@@ -17,15 +17,16 @@ li {
 
 a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: #1f2937;
     font-size: 18px;
 }
 
 .navbar,
 .hero,
 .footer {
-    background-color: #1F2937;
+    background: linear-gradient(to bottom, #3f3f3f, #252525);    
 }
+
 
 .hero {
     flex-basis: 300px;
@@ -51,7 +52,7 @@ a {
 }
 
 .logo {
-    color: white;
+    color: #cdaf67;
     font-weight: bold;
     font-size: 24px;
 }
@@ -64,13 +65,13 @@ a {
 }
 
 h1 {
-    color: white;
+    color: #cdaf67;
     font-size: 48px;
     font-weight: 900;
 }
 
 p {
-    color: #e5e7eb;
+    color: #cdaf67;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -83,7 +84,6 @@ h2 {
 }
 
 button {
-    background-color: blue;
     width: 100px;
     border-radius: 10px;
     padding: 5px;
@@ -102,6 +102,10 @@ img {
     flex-basis:  500px;
     border: 0;
     flex-shrink: 1;
+}
+
+.logo img {
+    border: none;
 }
 
 .box {
@@ -161,11 +165,16 @@ img {
 
 button,
 .action {
-    background-color: #3882f6;
+    background-color: #cdaf67;
+    color: #3f3f3f;
 }
 
 h4 {
-    color: white;
+    color: #3f3f3f;
+}
+
+.action p {
+    color: #3f3f3f;
 }
 
 .footer {
@@ -176,7 +185,7 @@ h4 {
 }
 
 .action .container button {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid #3f3f3f;
 }
 
 .action {
@@ -184,7 +193,7 @@ h4 {
     margin: 70px;
     height: 120px;
     width: 850px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid #3f3f3f;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
