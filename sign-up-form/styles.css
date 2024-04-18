@@ -1,3 +1,53 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+
+/* LEFT SIDE */
+.left-section {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+}
+
+.image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Maintain the aspect ratio while filling the container */
+}
+
+.card-body {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: 20rem;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.logo {
+    opacity: 0.6;
+    width: 200px;
+    height: 150px;
+}
+
+
+
+/* RIGHT SIDE */
+.right-section {
+    width: 50vw;
+    background-color: white;
+}
+
+
+
+
+/* RESET */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,35 +61,4 @@ li {
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    max-width: 100vw;
-}
-
-.left-side-section {
-    
-    max-width: 50vw;
-}
-
-.right-side-section {
-    max-width: 50vw;
-    background-color: white;
-}
-
-.background-image {
-    position: relative;
-    height: 100vh;
-}
-
-.logo-container {
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    top: 50%; /* Center the logo container vertically */
-    left: 50%; /* Center the logo container horizontally */
-    transform: translate(-50%, -50%); /* Center the logo container both vertically and horizontally */
 }
