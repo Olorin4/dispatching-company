@@ -26,19 +26,52 @@
                 <div class="hero">
                     <h3>This is not a real online service! But deep down, you know you need something like this
                         in your life to help you realize your deepest dreams. Sign up now to get you started.</h3>
-                    <h3>You <em>know</em> you want to.</h3>  
+                    <h3 class="heading">You <em>know</em> you want to.</h3>  
                 </div>
 
                 <div class="form-container">
                     <form action="./form-data/" method="post">
-                        <caption>Let's do this!</caption>
+                        <fieldset>
+                            <legend>Let's do this!</legend>
+
+                            <div class="user-name">
+                                <div class="first-name">
+                                    <label for="first-name">FIRST NAME</label>
+                                    <input id="first-name" name="first-name" required >
+                                </div>
+                                <div class="last-name">
+                                    <label for="last-name">LAST NAME</label>
+                                    <input id="last-name" name="last-name" required >
+                                </div>
+                            </div>
+
+                            <div class="user-info">
+                                <div class="e-mail">
+                                    <label for="e-mail">E-MAIL</label>
+                                    <input id="e-mail"  type="e-mail" name="e-mail" required >
+                                </div>
+                                <div class="tel">
+                                    <label for="tel">LAST NAME</label>
+                                    <input id="tel" type="tel" name="tel" required >
+                                </div>
+                            </div>
+
+                            <div class="user-password">
+                                <div class="password">
+                                    <label for="password">PASSWORD</label>
+                                    <input id="password"  type="password" name="password" required >
+                                </div>
+                                <div class="confirm-pwd">
+                                    <label for="tel">CONFIRM PASSWORD</label>
+                                    <input id="tel" type="tel" name="tel" required >
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <button>Create Account</button>
                     </form>
                 </div>
-
-                <footer>
-                    <button>Create Account</button>
-                </footer>
-
+                
             </section>
 
 

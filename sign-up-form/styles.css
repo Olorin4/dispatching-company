@@ -44,8 +44,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
     width: 50vw;
     height: 100vh;
 }
@@ -60,21 +58,92 @@
     border-bottom: solid 2px;
 }
 
-h1 {
+h3 {
+    padding-left: 30px;
+}
 
+.heading {
+    padding-top: 30px;
 }
 
 .form-container {
-    height: 33%;
+    height: 67%;
     width: 100%;
 }
 
-footer {
-    height: 33%;
-    width: 100%;
-    border-top: 2px solid #ccc;
+fieldset {
+    border: none;
+    border-bottom: 2px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #F9FAFB;
+}
+
+legend {
+    padding: 30px;
+}
+
+.user-name {
+    display: flex;
+    margin: 20px;
+}
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+label {
+    align-self: flex-start;
+    font-size: 0.6em;
+}
+
+.user-info {
+    display: flex;
+    margin: 20px;
+}
+
+.e-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.user-password {
+    display: flex;
+    margin: 20px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-pwd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
 }
 
 button {
@@ -89,10 +158,6 @@ button {
     color: white;
     font-weight: 700;
 }
-
-
-
-
 
 
 
