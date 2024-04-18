@@ -21,33 +21,90 @@
     object-fit: cover; /* Maintain the aspect ratio while filling the container */
 }
 
-.card-body {
+.logo-container {
     position: absolute;
     width: 100%;
     height: 150px;
-    top: 20rem;
+    top: 7.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(0, 0, 0, 0.6);
 }
 
 .logo {
     opacity: 0.6;
     width: 200px;
-    height: 150px;
+    height: 200px;
 }
-
 
 
 /* RIGHT SIDE */
 .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width: 50vw;
-    background-color: white;
+    height: 100vh;
 }
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 33%;
+    width: 100%;
+    background-color: #F9FAFB;
+    border-bottom: solid 2px;
+}
+
+h1 {
+
+}
+
+.form-container {
+    height: 33%;
+    width: 100%;
+}
+
+footer {
+    height: 33%;
+    width: 100%;
+    border-top: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #F9FAFB;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    outline: none;
+    background-color: #596D48;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* RESET */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -61,4 +118,9 @@ li {
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
 }
