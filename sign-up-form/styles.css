@@ -55,7 +55,6 @@
     height: 33%;
     width: 100%;
     background-color: #F9FAFB;
-    border-bottom: solid 2px;
 }
 
 h3 {
@@ -71,14 +70,23 @@ h3 {
     width: 100%;
 }
 
-fieldset {
+.user-input {
     border: none;
-    border-bottom: 2px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 67%;
+    color: rgb(108, 105, 105);
+    padding: 15px;
 }
 
 legend {
-    padding: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+input {
+    border: 0.5px solid #E5E7EB;
+    border-radius: 3px;
+    height: 22px;
 }
 
 .user-name {
@@ -103,7 +111,9 @@ legend {
 
 label {
     align-self: flex-start;
-    font-size: 0.6em;
+    font-size: 0.58em;
+    font-weight: 700;
+    color: rgb(136, 132, 132);
 }
 
 .user-info {
@@ -146,19 +156,45 @@ label {
     margin-left: 20px;
 }
 
+.sign-up-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 25px;
+    height: 33%;
+
+}
+
 button {
     margin: 20px;
     padding: 10px 20px;
     width: 150px;
     border: none;
-    border-radius: 10%;
+    border-radius: 5px;
     cursor: pointer;
     outline: none;
     background-color: #596D48;
-    color: white;
+    color: rgb(236, 232, 232);
     font-weight: 700;
 }
 
+p {
+    font-size: 0.8em;
+    color: rgb(136, 132, 132);
+}
+
+input:hover {
+    background: rgba(200, 210, 239, 0.1);
+}
+
+input:focus-visible {
+    background: rgba(200, 210, 239, 0.1);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 
 

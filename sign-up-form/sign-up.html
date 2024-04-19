@@ -31,49 +31,57 @@
 
                 <div class="form-container">
                     <form action="./form-data/" method="post">
-                        <fieldset>
+                        <fieldset class="user-input">
                             <legend>Let's do this!</legend>
 
                             <div class="user-name">
                                 <div class="first-name">
                                     <label for="first-name">FIRST NAME</label>
-                                    <input id="first-name" name="first-name" required >
+                                    <input id="first-name" type="text" name="first-name" required />
+                                    <span></span>
                                 </div>
                                 <div class="last-name">
                                     <label for="last-name">LAST NAME</label>
-                                    <input id="last-name" name="last-name" required >
+                                    <input id="last-name" type="text" name="last-name" required />
+                                    <span></span>
                                 </div>
                             </div>
 
                             <div class="user-info">
                                 <div class="e-mail">
                                     <label for="e-mail">E-MAIL</label>
-                                    <input id="e-mail"  type="e-mail" name="e-mail" required >
+                                    <input id="e-mail"  type="e-mail" name="e-mail" />
+                                    <span></span>
                                 </div>
                                 <div class="tel">
-                                    <label for="tel">LAST NAME</label>
-                                    <input id="tel" type="tel" name="tel" required >
+                                    <label for="tel">TELEPHONE NUMBER</label>
+                                    <input id="tel" type="tel" name="tel" />
+                                    <span></span>
                                 </div>
                             </div>
 
                             <div class="user-password">
                                 <div class="password">
                                     <label for="password">PASSWORD</label>
-                                    <input id="password"  type="password" name="password" required >
+                                    <input id="password"  type="password" name="password" required />
+                                    <span></span>
                                 </div>
                                 <div class="confirm-pwd">
-                                    <label for="tel">CONFIRM PASSWORD</label>
-                                    <input id="tel" type="tel" name="tel" required >
+                                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                                    <input id="confirm-pwd" type="password" name="confirm-pwd" required />
+                                    <span></span>
                                 </div>
                             </div>
                         </fieldset>
-
-                        <button>Create Account</button>
+                        <fieldset class="sign-up-button">
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account? Log in.</p>
+                        </fieldset>
                     </form>
-                </div>
                 
-            </section>
+                </div>
 
+            </section>
 
         </div>
 
