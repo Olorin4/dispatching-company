@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="styles.css">
         <script src="javascript.js" defer></script>
     </head>
+
+
     <body>
 
         <div class="container">
@@ -30,20 +32,20 @@
                 </div>
 
                 <div class="form-container">
-                    <form action="./form-data/" method="post">
+                    <form novalidate>
                         <fieldset class="user-input">
                             <legend>Let's do this!</legend>
 
                             <div class="user-name">
                                 <div class="first-name">
-                                    <label for="first-name">FIRST NAME</label>
+                                    <label for="first-name">FIRST NAME </label>
                                     <input id="first-name" type="text" name="first-name" required />
-                                    <span></span>
+                                    <span aria-live="polite"></span>
                                 </div>
                                 <div class="last-name">
                                     <label for="last-name">LAST NAME</label>
                                     <input id="last-name" type="text" name="last-name" required />
-                                    <span></span>
+                                    <span aria-live="polite"></span>
                                 </div>
                             </div>
 
@@ -64,19 +66,21 @@
                                 <div class="password">
                                     <label for="password">PASSWORD</label>
                                     <input id="password"  type="password" name="password" required />
-                                    <span></span>
+                                    <span aria-live="polite"></span>
                                 </div>
                                 <div class="confirm-pwd">
                                     <label for="confirm-pwd">CONFIRM PASSWORD</label>
                                     <input id="confirm-pwd" type="password" name="confirm-pwd" required />
-                                    <span></span>
+                                    <span aria-live="polite"></span>
                                 </div>
                             </div>
                         </fieldset>
+
                         <fieldset class="sign-up-button">
-                            <button type="submit">Create Account</button>
-                            <p>Already have an account? Log in.</p>
+                            <button type="submit"  id="submitButton">Create Account</button>
+                            <p>Already have an account? <a href="../index.html">Log in.</a></p>
                         </fieldset>
+
                     </form>
                 
                 </div>
@@ -86,4 +90,5 @@
         </div>
 
     </body>
+
 </html>
