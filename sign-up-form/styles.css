@@ -239,6 +239,9 @@ span {
     position: relative;
 }
 
+.show-error ~ input:invalid {
+    border-color: red;
+}
 
 
 
