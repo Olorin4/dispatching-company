@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     let form = document.querySelector('form');
     let inputs = document.querySelectorAll('input');
     let errorMessages = document.querySelectorAll('span');
+    let password1 = document.querySelector('#password');
+    let password2 = document.querySelector('#confirm-pwd');
+    let password = document.querySelector('.password');
+    let passwordError = password.querySelector(':last-child:not([class]):not([id])');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();   // Prevents form submission
@@ -19,9 +23,25 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+        // Check if passwords match
+        if (password1.value !== password2.value) {
+            isValid = false;
+            passwordError.textContent = "* Passwords do not match";
+            password1.style.cssText = "border-color: red";
+            password2.style.cssText = "border-color: red";
+            passwordError.classList.add('show-error');
+        } else if (password1.value === password2.value && password1.value !== "") {
+            passwordError.textContent = ""; // Clear previous error message
+            passwordError.classList.remove('show-error');
+        }
+
         // If form is valid, submit it
-        if (isValid) {
+        if (!isValid) {
+            form.classList.add('show-error');
+        } else {
+            form.classList.remove('show-error');
             form.submit();
         }
     });
 });
+

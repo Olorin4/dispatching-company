@@ -221,7 +221,7 @@ span {
 
 
 /* Show error message when input is invalid and submit button is clicked */
-.show-error {
+span.show-error {
     position: absolute;
     display: block;
     font-size: 0.6rem;
@@ -239,7 +239,7 @@ span {
     position: relative;
 }
 
-.show-error ~ input:invalid {
+.show-error input:invalid {
     border-color: red;
 }
 
