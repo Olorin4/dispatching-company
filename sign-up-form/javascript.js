@@ -54,4 +54,4 @@ form.addEventListener('submit', function(event) {
     }
 });
 
-// Add functionality for showing and hiding the passwords with an eye
+// Add functionality for showing and hiding the passwords with an eye icon
