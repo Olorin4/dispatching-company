@@ -196,30 +196,6 @@ input:focus {
     box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-/* Form Validations */
-/* .user-password input:invalid::after {
-    border: 1px solid red;
-}
-
-span {
-    position: relative;
-  }
-  
-  input:required:focus + span::after {
-    font-size: 0.6rem;
-    position: absolute;
-    content: "* This filed is required";
-    color: rgb(255, 0, 0);
-    padding: 7px 10px;
-    width: 150px;;
-    top: -6px;
-    left: -90px;
-  } */
-
-
-
 /* Show error message when input is invalid and submit button is clicked */
 span.show-error {
     position: absolute;
@@ -239,9 +215,9 @@ span.show-error {
     position: relative;
 }
 
-.show-error input:invalid {
+/* .show-error input:invalid {
     border-color: red;
-}
+} */
 
 
 
