@@ -8,6 +8,8 @@ module.exports = merge(common, {
     devServer: {
         static: "./dist",
         watchFiles: ["src/**/*"],
+        port: 3000,
+        open: true,
     },
     output: {
         filename: "[name].bundle.js",
